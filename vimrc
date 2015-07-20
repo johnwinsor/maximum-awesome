@@ -132,7 +132,12 @@ endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 " let g:airline_theme = "luna"
-" let g:airline_theme = "molokai"
+let g:airline_theme = "molokai"
 " let g:airline_theme = "jellybeans"
-let g:airline_theme = "solarized"
+" let g:airline_theme = "solarized"
 
+colorscheme molokai
+
+" For MacVim
+":set guifont=Monaco:h16
+set guifont=Source\ Code\ Pro\ for\ Powerline:h22

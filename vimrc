@@ -37,10 +37,10 @@ set listchars=tab:▸\ ,trail:▫
 set number                                                   " show line numbers
 set ruler                                                    " show where you are
 set scrolloff=3                                              " show context above/below cursorline
-set shiftwidth=2                                             " normal mode indentation commands use 2 spaces
+set shiftwidth=4                                             " normal mode indentation commands use 4 spaces
 set showcmd
 set smartcase                                                " case-sensitive search if any caps
-set softtabstop=2                                            " insert mode tab and backspace use 2 spaces
+set softtabstop=4                                            " insert mode tab and backspace use 4 spaces
 set tabstop=8                                                " actual tabs occupy 8 characters
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu                                                 " show a navigable menu for tab completion
@@ -77,6 +77,7 @@ cnoremap w!! %!sudo tee > /dev/null %
 let g:ctrlp_match_window = 'order:ttb,max:20'
 let g:NERDSpaceDelims=1
 let g:gitgutter_enabled = 0
+let g:mta_use_matchparen_group = 0
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
@@ -136,8 +137,8 @@ let g:airline_theme = "molokai"
 " let g:airline_theme = "jellybeans"
 " let g:airline_theme = "solarized"
 
-colorscheme molokai
+colorscheme solarized
 
 " For MacVim
 ":set guifont=Monaco:h16
-set guifont=Source\ Code\ Pro\ for\ Powerline:h22
+set guifont=Source\ Code\ Pro\ for\ Powerline:h18
